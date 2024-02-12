@@ -1,0 +1,15 @@
+
+<mat-card>
+    <mat-card-content>
+      <h1>Sign Up</h1>
+      <div class="seller">
+      <form #sellerSignUp="ngForm" (ngSubmit)="signUp(sellerSignUp.value)">
+      <input type="text" class="input-form" name="user" placeholder="Enter your username" ngModel autocomplete="off"> <br>
+      <input type="text" class="input-form" name="email" placeholder="Enter your Email" ngModel autocomplete="off"> <br>
+      <input type="password" class="input-form" name="pass" placeholder="Enter your password" ngModel autocomplete="off">
+      <button mat-stroked-button color="warn" style="border-color: chocolate; ">Sign Up</button>
+      </form>
+    </div>
+    </mat-card-content>
+  </mat-card>
+  

@@ -1,0 +1,55 @@
+
+ul{
+    float: right;
+    list-style-type: none;
+    margin-left: 780px;
+}
+ul li{ 
+    display: inline;
+   
+    padding: 10px;
+}
+li a{
+    color: aliceblue;
+   
+    cursor: pointer;
+   
+}
+
+ nav {background-color: #2b2a29;
+  color: white;
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+ }
+ .logo img{
+    width: 50px;
+    border-radius: 50%;
+ }
+ .logo ul li a {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    display: inline;
+  }
+  
+  .search {
+    display: flex;
+    align-items: center;
+  }
+  
+  .search input {
+    padding: 5px;
+    margin-right: 5px;
+    border-radius: 15px;
+  }
+  
+  .search button {
+    padding: 7px 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    height: 30px;
+  }

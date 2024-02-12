@@ -1,0 +1,22 @@
+mat-card {
+    width: 380px;
+    padding: 30px;
+    margin-left: 500px;
+    margin-top: 100px;
+    background-color: rgb(155, 182, 173);
+    background-image: url(https://i.pinimg.com/originals/dc/f3/67/dcf36788a00999da7dfe9ca146179a60.jpg);
+
+}
+.input-form{
+    height: 25px;
+    width: 250px;
+    border-radius: 5px;
+    border-color: rgb(227, 134, 21);
+    margin-bottom: 10px;
+    
+}
+h1
+{
+    color: rgb(244, 148, 5);
+    margin-left: 90px;
+}
