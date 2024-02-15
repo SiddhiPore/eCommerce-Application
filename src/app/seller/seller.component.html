@@ -1,15 +1,36 @@
 
-<mat-card>
+@if(!loginCheck){
+<mat-card >
     <mat-card-content>
       <h1>Sign Up</h1>
       <div class="seller">
       <form #sellerSignUp="ngForm" (ngSubmit)="signUp(sellerSignUp.value)">
-      <input type="text" class="input-form" name="user" placeholder="Enter your username" ngModel autocomplete="off"> <br>
-      <input type="text" class="input-form" name="email" placeholder="Enter your Email" ngModel autocomplete="off"> <br>
-      <input type="password" class="input-form" name="pass" placeholder="Enter your password" ngModel autocomplete="off">
-      <button mat-stroked-button color="warn" style="border-color: chocolate; ">Sign Up</button>
+      <input type="text" #task class="input-form" name="user" placeholder="Enter your username" ngModel autocomplete="off"> <br>
+      <input type="text" #task1 class="input-form" name="email" placeholder="Enter your Email" ngModel autocomplete="off"> <br>
+      <input type="password" #task2 class="input-form" name="password" placeholder="Enter your password" ngModel autocomplete="off">
+      <button mat-stroked-button color="warn" [disabled]="!task.value" [disabled]="!task1.value" [disabled]="!task2.value"  style="border-color: chocolate; ">Sign Up</button>
       </form>
     </div>
+   <p >Already have account ?</p><a (click)="openLogin()" >Login here</a>
     </mat-card-content>
   </mat-card>
+}
+
+  <!-- Login Form -->
+  @if(loginCheck){
+  <mat-card>
+    <mat-card-content>
+      <h1>Login Form</h1>
+      <div class="seller">
+      <form #sellerLogin="ngForm" (ngSubmit)="login(sellerLogin.value)">
+      <!-- <input type="text" class="input-form" name="user" placeholder="Enter your username" ngModel autocomplete="off"> <br> -->
+      <input type="text" class="input-form" name="email" placeholder="Enter your Email" ngModel autocomplete="off"> <br> 
+      <input type="password" class="input-form" name="password" placeholder="Enter your password" ngModel autocomplete="off">
+      <button mat-stroked-button color="warn" style="border-color: chocolate; ">Login</button>
+      </form>
+    </div>
+    <p >Don,t have account ?</p><a (click)="openSignup()" >Sign up</a>
+    </mat-card-content>
+  </mat-card>
+  }
   

@@ -19,4 +19,26 @@ h1
 {
     color: rgb(244, 148, 5);
     margin-left: 90px;
+    font-style: italic;
+    font-weight: bolder;
 }
+
+mat-card mat-card-content p
+{
+   
+        color: white;
+        margin-top: 10px;
+        margin-left: 88px;
+       
+        font-weight: bold;
+    
+    
+}
+mat-card mat-card-content a 
+{
+    color: rgb(238, 143, 18);
+    font-style: italic;
+    font-weight: bolder;
+    cursor: pointer;
+}
+

@@ -27,6 +27,30 @@ export class SellerComponent implements OnInit {
  ngOnInit(){
    this.seller.reloadSeller();
  }
+
+login(data:signUp):void
+ {
+  this.seller.userLogin(data);
+  this.seller.loginError.subscribe((isError)=>{
+if(isError)
+{
+  alert("Invalid email or password")
+}
+
+  })
+   
+  
+ }
+
+ loginCheck:boolean = false;
+ openLogin()
+ {
+  this.loginCheck = !this.loginCheck;
+ }
+ openSignup()
+{
+this.loginCheck =  !this.loginCheck;
+}
      
   
   }
