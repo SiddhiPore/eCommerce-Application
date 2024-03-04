@@ -1,0 +1,25 @@
+.input-form{
+    height: 25px;
+    width: 250px;
+    border-radius: 5px;
+    border-color: rgb(136, 153, 229);
+    margin-bottom: 10px;
+    
+}
+mat-card {
+    width: 380px;
+    padding: 30px;
+    margin-left: 500px;
+    margin-top: 100px;
+    background-color: rgb(155, 182, 173);
+    background-image: url(https://wallpapercave.com/wp/wp6193344.jpg);
+    background-size: cover;
+
+}
+h1
+{
+    color: rgb(244, 148, 5);
+    margin-left: 85px;
+    font-style: italic;
+    font-weight: bolder;
+}

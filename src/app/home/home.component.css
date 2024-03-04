@@ -1,0 +1,29 @@
+.product-head-img{
+  
+    margin-top: 50px;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+  
+}
+.carousel-caption
+{
+ 
+  background-color: rgb(161, 156, 156);
+  border-radius: 5px;
+}
+
+.product-card{
+  padding: 20px;
+  width: 300px;
+  margin-left: 15px;
+  height: 290px;
+  margin-bottom: 20px;
+
+}
+.product-card img{
+  margin-left: 45px;
+}
+.product-details h6{
+  font-size: medium;
+}

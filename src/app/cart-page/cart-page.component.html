@@ -1,0 +1,48 @@
+<div class="cart-page">
+    <h1>My Cart </h1>
+    <div class="row">
+        <div class="col-sm-8 details">
+          @for(cart of cartData; track cart){
+            <ul>
+              <li>
+                <img src="{{cart.image}}" alt="">
+              </li>  
+              <li><span>{{cart.name}}</span></li>  
+              <li><span>Price :{{cart.price}}</span></li>  
+              <li><span>Quantity :{{cart.quantity}}</span></li>
+              <li>    <button mat-raised-button color="warn" (click)="removeToCart(cart.id)">Remove to Cart</button> </li>
+            </ul>
+            <mat-divider></mat-divider>
+          }
+        </div>
+        <div class="summary">
+           <h2>Summary</h2>
+           <ul>
+            <li><span>Amount</span> <span>{{priceSummary.price}}</span></li>  
+            <li><span>Tax</span> <span>{{priceSummary.tax}}</span></li>  
+            <li><span>Delivery</span> <span>{{priceSummary.delivery}}</span></li>  
+            <li><span>Discount</span> <span>{{priceSummary.discount}}</span></li> 
+            <br>  
+            <mat-divider></mat-divider>
+            <li><span><h4>Total</h4></span> <span><h4>{{priceSummary.total}}</h4></span></li>  
+            <br><br>
+            <button (click)="checkout()" mat-raised-button color="primary" style="width: 360px;">Checkout</button>
+          </ul>
+        </div>
+    </div>
+</div>
+
+<!-- <div class="container">
+ 
+    <img src="https://th.bing.com/th/id/OIP.RYd8HSOdXOMIRUg_RDmVNgHaHa?rs=1&pid=ImgDetMain" alt="Image" class="left-image">
+    <div class="right-info">
+      <h1>My Cart</h1>
+        <ul>
+          <li><span>Product Name</span></li>  
+          <li><span>Price : 100</span></li>  
+          <li><span>Quantity : 5</span></li>
+          <li><button>Remove to cart</button></li>
+        </ul>
+
+    </div>
+  </div> -->

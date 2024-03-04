@@ -1,0 +1,42 @@
+  <div class="my-orders">
+    <h1>My Orders</h1>
+    <div class="row">
+        <div class="col-sm-2">
+            <span>Order</span>
+        </div>
+        <div class="col-sm-2">
+            <span>Order ID</span>
+        </div>
+        <div class="col-sm-2">
+            <span>Price</span>
+        </div>
+        <div class="col-sm-2">
+            <span>Status</span>
+        </div>
+        <div class="col-sm-2">
+            <span>Action</span>
+        </div>
+    </div>
+    @for(order of orderData; track order){
+    <br>
+    <mat-divider></mat-divider> <br> 
+    <div class="row">
+        <div class="col-sm-2">
+           <img src="https://www.proaudiokenya.com/wp-content/uploads/2018/07/Select-Product-750x750.png" alt="">
+        </div>
+        <div class="col-sm-2">
+            <span>#{{order.id}}</span>
+        </div>
+        <div class="col-sm-2">
+            <span>{{order.totalPrice}}</span>
+        </div>
+        <div class="col-sm-2">
+            <span>In Process</span>
+        </div>
+        <div class="col-sm-2">
+            <span>  <button mat-raised-button color="warn" (click)="cancelOrder(order.id)">Cancel Order</button> </span>
+        </div>
+    </div>
+}
+
+  </div>

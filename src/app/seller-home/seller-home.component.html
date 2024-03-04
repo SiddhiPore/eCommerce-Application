@@ -1,1 +1,38 @@
-<p>seller-home works!</p>
+<div class="productlist">
+    <h1>Product List</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Image</th>
+               <th>Name</th>
+               <th>Price</th>
+               <th>Category</th>
+               <th>Color</th>
+               <th>Description</th>
+               <th>Action</th>
+            </tr>
+        </thead>
+<tbody>
+    @for(item of productList; track item){
+    <tr>
+             <td> <img src="{{item.image}}" /></td>
+            <td>{{item.name}}</td>
+            <td>{{item.price}}</td>
+            <td>{{item.color}}</td>
+            <td>{{item.category}}</td>
+            <td>{{item.description}}</td>
+            <td>
+                <!-- <button (click)="deleteProduct(item.id)">Delete</button> <br> <br> -->
+                <!-- <a routerLink="/seller-update-product"><button >Update</button></a>
+                <br> -->
+                <button mat-raised-button color="warn"  (click)="deleteProduct(item.id)">Delete</button>
+                <br> <br>
+                <a routerLink="/seller-update-product/{{item.id}}"> <button mat-raised-button color="primary" >Update</button></a>
+            </td>
+    
+    </tr>
+    }
+</tbody>
+    </table>
+   <router-outlet></router-outlet>
+</div>

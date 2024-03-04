@@ -1,34 +1,97 @@
-
-<nav>  
-<div class="logo">
- <a routerLink="/home"> <img src="https://th.bing.com/th/id/OIP._4gpKJIl2b2GrCwg-rARsAAAAA?rs=1&pid=ImgDetMain" alt="logo"></a>  
-    @switch(menuType){
-        @case('default'){
-    <ul>
-        <li><a routerLink="/home">Home</a></li>
-        <li><a routerLink="/seller">Seller</a></li>
-        <li><a href="#">Login</a></li>
-        <li><a href="#">Cart(0)</a></li>
-    </ul>
+<!-- <header>
+  <div class="logo">
+    <a routerLink="/"> <img src="https://th.bing.com/th/id/OIP.zF2NrBzZxTkuyMixObwQFwHaHa?rs=1&pid=ImgDetMain" alt="logo"></a>  
+  </div>
+<nav>
+  @switch(menuType){
+    @case('default')
+{
+<ul>
+    <li><a routerLink="/">Home</a></li>
+    <li><a routerLink="/seller">Seller</a></li>
+    <li><a routerLink="/user-auth">User-Login</a></li>
+    <li><a href="#">Cart({{cartItem}})</a></li>
+</ul>
 }
+@case('user'){
+    <ul> -->
+       
+        <!-- <li><a routerLink="/seller-add-product">About</a></li> -->
+        <!-- <li><a href="#">Cart({{cartItem}})</a></li> -->
+        <!-- <li><a href="#">{{userName}}</a></li>
+        <li><a routerLink="/">Home</a></li>
+        <li><a (click)="userLogout()">UserLogout</a></li>
+        <li><a routerLink="/cart-page">Cart({{cartItem}})</a></li>
+    </ul>
+    }
 @case('seller'){
-    <ul>
-        <li><a routerLink="/home">Product List</a></li>
-        <li><a routerLink="/seller">Add Product</a></li>
-        <li><a (click)="logout()">Logout</a></li>
-        <li><a href="#">{{sellerName   }}</a></li>
-    </ul>
+    
+<ul>
+    <li><a routerLink="/seller-home">Product List</a></li>
+    <li><a routerLink="/seller-add-product">Add Product</a></li>
+    <li><a (click)="logout()">Logout</a></li>
+    <li><a href="#">{{sellerName}}</a></li>
+</ul>
 }
 }
-</div>
-@if(menuType ==="default"){
-<div class="search"> 
-    <input type="text" placeholder="Search Product" >
-    <button mat-raised-button color="primary" >Search</button>
-</div>
-}  
- </nav>
+</nav>
 
- <router-outlet></router-outlet>
+    @if(menuType ==="default"){
+        <div class="search-bar"> 
+            <input type="text" (keyup)="searchProduct($event)" placeholder="Search Product">
+            <button mat-raised-button color="primary" >Search</button> 
+        </div>
+        }
+
+</header>
+<router-outlet></router-outlet> -->
 
 
+<header class="header">
+    <div class="container">
+      <div class="logo">
+        <a routerLink="/"> <img src="https://th.bing.com/th/id/OIP.zF2NrBzZxTkuyMixObwQFwHaHa?rs=1&pid=ImgDetMain" alt="logo"></a>  
+      </div>
+      <nav class="nav">
+        @switch(menuType){
+            @case('default')
+        {
+        <ul>
+            <li><a routerLink="/">Home</a></li>
+            <li><a routerLink="/seller">Seller</a></li>
+            <li><a routerLink="/user-auth">User-Login</a></li>
+            <li><a href="#">Cart({{cartItem}})</a></li>
+        </ul>
+        }
+        @case('user'){
+            <ul>
+               
+                <!-- <li><a routerLink="/seller-add-product">About</a></li> -->
+                <!-- <li><a href="#">Cart({{cartItem}})</a></li> -->
+                <li><a href="#">{{userName}}</a></li>
+                <li><a routerLink="/">Home</a></li>
+                <li><a (click)="userLogout()">UserLogout</a></li>
+                <li><a routerLink="/cart-page">Cart({{cartItem}})</a></li>
+            </ul>
+            }
+        @case('seller'){
+            
+        <ul>
+            <li><a routerLink="/seller-home">Product List</a></li>
+            <li><a routerLink="/seller-add-product">Add Product</a></li>
+            <li><a (click)="logout()">Logout</a></li>
+            <li><a href="#">{{sellerName}}</a></li>
+        </ul>
+        }
+        }
+      </nav>
+      @if(menuType ==="default"){
+      <div class="search">
+        <input type="text" placeholder="Search">
+        <button>Search</button>
+      </div>
+    }
+    </div>
+   
+  </header>
+  <router-outlet></router-outlet>

@@ -1,0 +1,37 @@
+
+<h1 >CheckOut</h1>
+<div class="container">
+    
+<form #orderData="ngForm" (ngSubmit)="orderNow(orderData.value)">
+    <fieldset>
+      <legend>Add Shipping Address</legend>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" ngModel><br>
+  
+      <label for="address">Address:</label>
+      <input type="text" id="address" name="address" ngModel ><br>
+  
+      <label for="details">Details:</label>
+      <textarea id="details" name="details" ngModel></textarea><br>
+  
+      <input type="submit" value="Order Now">
+    </fieldset>
+  </form>
+
+    <div class="info-box">
+        <h2>Total Amount: {{totalPrice}}</h2>
+        <!-- <h3>Payment Method : <b>Pay on Delivery</b></h3> -->
+        <mat-form-field style="width: 250px;">
+            <mat-label >Payment Methods</mat-label>
+            <mat-select>
+              @for (food of pay; track food) {
+                <mat-option [value]="food.value">{{food.viewValue}}</mat-option>
+              }
+            </mat-select>
+          </mat-form-field>
+          <br>
+          <mat-divider></mat-divider>
+          <br>
+          <!-- <button mat-raised-button color="primary">Buy Now</button> -->
+    </div>
+</div>

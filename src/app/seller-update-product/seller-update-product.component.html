@@ -1,0 +1,17 @@
+<mat-card>
+    <mat-card-content>
+      <h1>Update Product</h1>
+      <div class="updateproduct">
+      <form #updateProduct="ngForm" (ngSubmit)="submit(updateProduct.value)">
+      <input type="text" #task class="input-form" name="name" placeholder="Enter product name" ngModel="{{productData?.name}}" autocomplete="off"> <br>
+      <input type="text" #task1 class="input-form" name="price" placeholder="Enter product price" ngModel="{{productData?.price}}" autocomplete="off"> <br>
+      <input type="text" #task2 class="input-form" name="color" placeholder="Enter product color" ngModel="{{productData?.color}}" autocomplete="off"> <br>
+      <input type="text" #task2 class="input-form" name="category" placeholder="Enter product category" ngModel="{{productData?.category}}" autocomplete="off"> <br>
+      <input type="text" #task2 class="input-form" name="description" placeholder="Enter product Discription" ngModel="{{productData?.description}}" autocomplete="off"> <br>
+      <input type="text" #task2 class="input-form" name="image" placeholder="Enter product image URL" ngModel="{{productData?.image}}" autocomplete="off"> <br>
+      <button mat-stroked-button color="warn" style="border-color: rgb(167, 234, 234); ">Update Product</button>
+      </form>
+    </div>
+   
+</mat-card-content>
+</mat-card>

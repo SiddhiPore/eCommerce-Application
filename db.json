@@ -7,40 +7,427 @@
       "id": "1"
     },
     {
-      "id": "f7b6",
-      "user": "ss",
-      "email": "dd",
-      "password": "qw"
+      "id": "bd80",
+      "user": "Sdff",
+      "email": "err123",
+      "password": "12"
     },
     {
-      "id": "081a",
-      "user": "siddhi",
-      "email": "sid",
+      "id": "044b",
+      "user": "",
+      "email": "",
+      "password": ""
+    },
+    {
+      "id": "b768",
+      "user": "sss",
+      "email": "sss",
+      "password": "sss"
+    },
+    {
+      "id": "4e9d",
+      "user": "sss",
+      "email": "sss",
+      "password": "qqq"
+    }
+  ],
+  "product": [
+    {
+      "name": "KTM",
+      "price": "1200000",
+      "color": "White",
+      "category": "Bike",
+      "description": "Speed is good",
+      "image": "https://th.bing.com/th/id/OIP.rCnUKLiuSnFz1uC-9MaX0gHaGj?rs=1&pid=ImgDetMain",
+      "id": "3d4f"
+    },
+    {
+      "name": "Dell",
+      "price": "120000",
+      "color": "Silver",
+      "category": "laptop",
+      "description": "Good",
+      "image": "https://th.bing.com/th/id/OIP.zl8VXpcnDH40mhTOtQ446gHaHa?w=214&h=214&c=7&r=0&o=5&dpr=1.3&pid=1.7",
+      "id": "8a4c"
+    },
+    {
+      "name": "CooFandy ",
+      "price": "1000",
+      "color": "Green",
+      "category": "Shirt",
+      "description": "Two in One",
+      "image": "https://m.media-amazon.com/images/I/71I-cik1CyL._AC_UL1500_.jpg",
+      "id": "dcef"
+    },
+    {
+      "id": "e688",
+      "name": "levis",
+      "price": "1200",
+      "color": "blue",
+      "category": "jeans",
+      "description": "Full Length",
+      "image": "https://oldnavy.gap.com/webcontent/0015/566/127/cn15566127.jpg"
+    },
+    {
+      "id": "7c96",
+      "name": "Cotton Candy",
+      "price": "200",
+      "color": "Gray",
+      "category": "tshirt",
+      "description": "Without Coller",
+      "image": "https://blackberrys.com/cdn/shop/files/Stripe_Crew_Neck_T_Shirt_In_Grey_Tias-ETCC2817G1MA23SL-image1.jpg?v=1703569653"
+    },
+    {
+      "id": "4e4b",
+      "name": "Ertiga",
+      "price": "300000",
+      "color": "Brown",
+      "category": "car",
+      "description": "Good",
+      "image": "https://th.bing.com/th/id/OIP.yx2D367gXzMnOH-sc51C9wHaEo?rs=1&pid=ImgDetMain"
+    },
+    {
+      "id": "1904",
+      "name": "IPhone",
+      "price": "12000",
+      "color": "White",
+      "category": "Mobile",
+      "description": "Speed",
+      "image": "https://th.bing.com/th/id/OIP.oEcyukM4138Le9pzqbchWwHaHa?rs=1&pid=ImgDetMain"
+    },
+    {
+      "id": "f0d5",
+      "name": "Dove",
+      "price": "30",
+      "color": "White",
+      "category": "Soap",
+      "description": "Soft",
+      "image": "https://th.bing.com/th/id/R.626e8a43401808385e1849794b95547c?rik=uLA5VbqotVKLjQ&riu=http%3a%2f%2fwww.jansonwholesale.com%2fwp-content%2fuploads%2f2017%2f06%2fDOVE-SOAP-2.jpg&ehk=Y%2fmL00%2bG%2bjwEAKKozzCPdzNvLj%2fR4grga9kPMvw2xcA%3d&risl=&pid=ImgRaw&r=0"
+    },
+    {
+      "id": "d629",
+      "name": "Gizga Essential",
+      "price": "230",
+      "color": "Gray",
+      "category": "Laptop Cover",
+      "description": "Durable",
+      "image": "https://i5.walmartimages.com/asr/c7e7fb97-e4ca-496a-888f-43aaa6b37f50.7d21a0aded151629eeb31548aa016a7d.jpeg?odnWidth=1000&odnHeight=1000&odnBg=ffffff"
+    }
+  ],
+  "users": [
+    {
+      "id": "414c",
+      "user": "Vedika Pore",
+      "email": "vp@gmail.com",
       "password": "123"
     },
     {
-      "id": "c338",
-      "user": "d",
-      "email": "",
-      "password": ""
+      "id": "e509",
+      "user": "siddhiPore",
+      "email": "siddhipore@gmail.com",
+      "password": "1234"
     },
     {
-      "id": "7080",
-      "user": "ss",
-      "email": "",
-      "password": ""
+      "id": "3cd1",
+      "user": "Shraddha Pore",
+      "email": "shraddha@gmail.com",
+      "password": "123"
     },
     {
-      "id": "c37a",
+      "id": "ae0d",
+      "user": "sss",
+      "email": "sss",
+      "password": "sss"
+    },
+    {
+      "id": "faf5",
+      "user": "ass",
+      "email": "sas",
+      "password": "123sd"
+    },
+    {
+      "id": "09fa",
+      "user": "sigg",
+      "email": "yu",
+      "password": "78"
+    },
+    {
+      "id": "184b",
       "user": "dd",
-      "email": "",
-      "password": ""
+      "email": "ff",
+      "password": "aa"
     },
     {
-      "id": "2dc0",
-      "user": "siddhi",
+      "id": "d0f3",
+      "user": "sss",
+      "email": "sss",
+      "password": "sss"
+    },
+    {
+      "id": "5527",
+      "user": "sss",
+      "email": "ssss",
+      "password": "ssss"
+    },
+    {
+      "id": "91f3",
+      "user": "sss",
+      "email": "ss",
+      "password": "ss"
+    },
+    {
+      "id": "585d",
+      "user": "sss",
+      "email": "sss",
+      "password": "sss"
+    },
+    {
+      "id": "177e",
+      "user": "sss",
+      "email": "ss",
+      "password": "ss"
+    },
+    {
+      "id": "b18d",
+      "user": "sss",
+      "email": "ssss",
+      "password": "sss"
+    },
+    {
+      "id": "06d9",
+      "user": "sss",
+      "email": "ssss",
+      "password": "ssss"
+    },
+    {
+      "id": "b3fb",
+      "user": "sss",
+      "email": "sss",
+      "password": "sss"
+    },
+    {
+      "id": "041d",
+      "user": "ss",
+      "email": "ss",
+      "password": "ss"
+    },
+    {
+      "id": "e592",
+      "user": "sss",
+      "email": "sss",
+      "password": "sss"
+    }
+  ],
+  "cart": [
+    {
+      "id": "bede",
+      "name": "CooFandy ",
+      "price": "1000",
+      "color": "Green",
+      "category": "Shirt",
+      "description": "Two in One",
+      "image": "https://m.media-amazon.com/images/I/71I-cik1CyL._AC_UL1500_.jpg",
+      "quantity": 1,
+      "userId": "e509",
+      "productId": "dcef"
+    },
+    {
+      "id": "79b7",
+      "name": "CooFandy ",
+      "price": "1000",
+      "color": "Green",
+      "category": "Shirt",
+      "description": "Two in One",
+      "image": "https://m.media-amazon.com/images/I/71I-cik1CyL._AC_UL1500_.jpg",
+      "quantity": 1,
+      "productId": "dcef"
+    },
+    {
+      "id": "dce3",
+      "name": "CooFandy ",
+      "price": "1000",
+      "color": "Green",
+      "category": "Shirt",
+      "description": "Two in One",
+      "image": "https://m.media-amazon.com/images/I/71I-cik1CyL._AC_UL1500_.jpg",
+      "quantity": 1,
+      "userId": "3cd1",
+      "productId": "dcef"
+    },
+    {
+      "id": "df44",
+      "name": "IPhone",
+      "price": "12000",
+      "color": "White",
+      "category": "Mobile",
+      "description": "Speed",
+      "image": "https://th.bing.com/th/id/OIP.oEcyukM4138Le9pzqbchWwHaHa?rs=1&pid=ImgDetMain",
+      "quantity": 1,
+      "userId": "3cd1",
+      "productId": "1904"
+    },
+    {
+      "id": "a1a9",
+      "name": "CooFandy ",
+      "price": "1000",
+      "color": "Green",
+      "category": "Shirt",
+      "description": "Two in One",
+      "image": "https://m.media-amazon.com/images/I/71I-cik1CyL._AC_UL1500_.jpg",
+      "quantity": 1,
+      "productId": "dcef"
+    },
+    {
+      "id": "9766",
+      "name": "Dove",
+      "price": "30",
+      "color": "White",
+      "category": "Soap",
+      "description": "Soft",
+      "image": "https://th.bing.com/th/id/R.626e8a43401808385e1849794b95547c?rik=uLA5VbqotVKLjQ&riu=http%3a%2f%2fwww.jansonwholesale.com%2fwp-content%2fuploads%2f2017%2f06%2fDOVE-SOAP-2.jpg&ehk=Y%2fmL00%2bG%2bjwEAKKozzCPdzNvLj%2fR4grga9kPMvw2xcA%3d&risl=&pid=ImgRaw&r=0",
+      "quantity": 1,
+      "userId": "faf5",
+      "productId": "f0d5"
+    },
+    {
+      "id": "6a4d",
+      "name": "Dell",
+      "price": "120000",
+      "color": "Silver",
+      "category": "laptop",
+      "description": "Good",
+      "image": "https://th.bing.com/th/id/OIP.zl8VXpcnDH40mhTOtQ446gHaHa?w=214&h=214&c=7&r=0&o=5&dpr=1.3&pid=1.7",
+      "quantity": 1,
+      "userId": "faf5",
+      "productId": "8a4c"
+    },
+    {
+      "id": "8222",
+      "name": "CooFandy ",
+      "price": "1000",
+      "color": "Green",
+      "category": "Shirt",
+      "description": "Two in One",
+      "image": "https://m.media-amazon.com/images/I/71I-cik1CyL._AC_UL1500_.jpg",
+      "quantity": 1,
+      "userId": "184b",
+      "productId": "dcef"
+    },
+    {
+      "id": "1aa5",
+      "name": "levis",
+      "price": "1200",
+      "color": "blue",
+      "category": "jeans",
+      "description": "Full Length",
+      "image": "https://oldnavy.gap.com/webcontent/0015/566/127/cn15566127.jpg",
+      "quantity": 1,
+      "userId": "184b",
+      "productId": "e688"
+    },
+    {
+      "id": "c119",
+      "name": "Ertiga",
+      "price": "300000",
+      "color": "Brown",
+      "category": "car",
+      "description": "Good",
+      "image": "https://th.bing.com/th/id/OIP.yx2D367gXzMnOH-sc51C9wHaEo?rs=1&pid=ImgDetMain",
+      "quantity": 1,
+      "userId": "184b",
+      "productId": "4e4b"
+    },
+    {
+      "id": "934e",
+      "name": "Cotton Candy",
+      "price": "200",
+      "color": "Gray",
+      "category": "tshirt",
+      "description": "Without Coller",
+      "image": "https://blackberrys.com/cdn/shop/files/Stripe_Crew_Neck_T_Shirt_In_Grey_Tias-ETCC2817G1MA23SL-image1.jpg?v=1703569653",
+      "quantity": 1,
+      "userId": "184b",
+      "productId": "7c96"
+    },
+    {
+      "id": "e5fd",
+      "name": "IPhone",
+      "price": "12000",
+      "color": "White",
+      "category": "Mobile",
+      "description": "Speed",
+      "image": "https://th.bing.com/th/id/OIP.oEcyukM4138Le9pzqbchWwHaHa?rs=1&pid=ImgDetMain",
+      "quantity": 1,
+      "userId": "184b",
+      "productId": "1904"
+    },
+    {
+      "id": "b992",
+      "name": "Dove",
+      "price": "30",
+      "color": "White",
+      "category": "Soap",
+      "description": "Soft",
+      "image": "https://th.bing.com/th/id/R.626e8a43401808385e1849794b95547c?rik=uLA5VbqotVKLjQ&riu=http%3a%2f%2fwww.jansonwholesale.com%2fwp-content%2fuploads%2f2017%2f06%2fDOVE-SOAP-2.jpg&ehk=Y%2fmL00%2bG%2bjwEAKKozzCPdzNvLj%2fR4grga9kPMvw2xcA%3d&risl=&pid=ImgRaw&r=0",
+      "quantity": 7,
+      "userId": "184b",
+      "productId": "f0d5"
+    },
+    {
+      "id": "b563",
+      "name": "Cotton Candy",
+      "price": "200",
+      "color": "Gray",
+      "category": "tshirt",
+      "description": "Without Coller",
+      "image": "https://blackberrys.com/cdn/shop/files/Stripe_Crew_Neck_T_Shirt_In_Grey_Tias-ETCC2817G1MA23SL-image1.jpg?v=1703569653",
+      "quantity": 1,
+      "userId": "06d9",
+      "productId": "7c96"
+    },
+    {
+      "id": "14a6",
+      "name": "CooFandy ",
+      "price": "1000",
+      "color": "Green",
+      "category": "Shirt",
+      "description": "Two in One",
+      "image": "https://m.media-amazon.com/images/I/71I-cik1CyL._AC_UL1500_.jpg",
+      "quantity": 1,
+      "userId": "b3fb",
+      "productId": "dcef"
+    },
+    {
+      "id": "3095",
+      "name": "CooFandy ",
+      "price": "1000",
+      "color": "Green",
+      "category": "Shirt",
+      "description": "Two in One",
+      "image": "https://m.media-amazon.com/images/I/71I-cik1CyL._AC_UL1500_.jpg",
+      "quantity": 1,
+      "productId": "dcef"
+    },
+    {
+      "id": "08fd",
+      "name": "CooFandy ",
+      "price": "1000",
+      "color": "Green",
+      "category": "Shirt",
+      "description": "Two in One",
+      "image": "https://m.media-amazon.com/images/I/71I-cik1CyL._AC_UL1500_.jpg",
+      "quantity": 1,
+      "productId": "dcef"
+    }
+  ],
+  "orders": [
+    {
+      "id": "299c",
       "email": "",
-      "password": ""
+      "address": "",
+      "details": "",
+      "totalPrice": 1300,
+      "userId": "e592"
     }
   ]
 }

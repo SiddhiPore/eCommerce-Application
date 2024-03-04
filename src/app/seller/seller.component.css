@@ -1,44 +1,125 @@
-mat-card {
-    width: 380px;
-    padding: 30px;
-    margin-left: 500px;
+
+.container {
+    display: flex;
+    align-items: flex-start;
+  }
+  
+  .image {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin-right: 20px;
+  }
+  
+  .info {
+    flex: 1;
+  }@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+  *{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins',sans-serif;
+  }
+  body{
+    display: flex;
+    height: 100vh;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background: #151515;
+  }
+
+  .login-form{
     margin-top: 100px;
-    background-color: rgb(155, 182, 173);
-    background-image: url(https://i.pinimg.com/originals/dc/f3/67/dcf36788a00999da7dfe9ca146179a60.jpg);
-
-}
-.input-form{
-    height: 25px;
-    width: 250px;
+    margin-left: 550px;
+    position: relative;
+    width: 370px;
+    height: auto;
+    background: #1b1b1b;
+    padding: 40px 35px 60px;
+    box-sizing: border-box;
+    border: 1px solid black;
     border-radius: 5px;
-    border-color: rgb(227, 134, 21);
-    margin-bottom: 10px;
-    
-}
-h1
-{
-    color: rgb(244, 148, 5);
-    margin-left: 90px;
-    font-style: italic;
-    font-weight: bolder;
-}
-
-mat-card mat-card-content p
-{
-   
-        color: white;
-        margin-top: 10px;
-        margin-left: 88px;
-       
-        font-weight: bold;
-    
-    
-}
-mat-card mat-card-content a 
-{
-    color: rgb(238, 143, 18);
-    font-style: italic;
-    font-weight: bolder;
+    box-shadow: inset 0 0 1px #272727;
+  }
+  .text{
+    font-size: 30px;
+    color: #c7c7c7;
+    font-weight: 600;
+    letter-spacing: 2px;
+  }
+  form{
+    margin-top: 40px;
+  }
+  form .field{
+    margin-top: 20px;
+    display: flex;
+  }
+  .field .fas{
+    height: 50px;
+    width: 60px;
+    color: #868686;
+    font-size: 20px;
+    line-height: 50px;
+    border: 1px solid #444;
+    border-right: none;
+    border-radius: 5px 0 0 5px;
+    background: linear-gradient(#333,#222);
+  }
+  .field input,form button{
+    height: 50px;
+    width: 100%;
+    outline: none;
+    font-size: 19px;
+    color: #868686;
+    padding: 0 15px;
+    border-radius: 0 5px 5px 0;
+    border: 1px solid #444;
+    caret-color: #339933;
+    background: linear-gradient(#333,#222);
+  }
+  input:focus{
+    color: #339933;
+    box-shadow: 0 0 5px rgba(0,255,0,.2),
+                inset 0 0 5px rgba(0,255,0,.1);
+    background: linear-gradient(#333933,#222922);
+    animation: glow .8s ease-out infinite alternate;
+  }
+  @keyframes glow {
+     0%{
+      border-color: #339933;
+      box-shadow: 0 0 5px rgba(0,255,0,.2),
+                  inset 0 0 5px rgba(0,0,0,.1);
+    }
+     100%{
+      border-color: #6f6;
+      box-shadow: 0 0 20px rgba(0,255,0,.6),
+                  inset 0 0 10px rgba(0,255,0,.4);
+    }
+  }
+  button{
+    margin-top: 30px;
+    border-radius: 5px!important;
+    font-weight: 600;
+    letter-spacing: 1px;
     cursor: pointer;
-}
-
+  }
+  button:hover{
+    color: #339933;
+    border: 1px solid #339933;
+    box-shadow: 0 0 5px rgba(0,255,0,.3),
+                0 0 10px rgba(0,255,0,.2),
+                0 0 15px rgba(0,255,0,.1),
+                0 2px 0 black;
+  }
+  .link{
+    margin-top: 25px;
+    color: #868686;
+    cursor: pointer;
+  }
+  .link a{
+    color: #339933;
+    text-decoration: none;
+  }
+  .link a:hover{
+    text-decoration: underline;
+  }

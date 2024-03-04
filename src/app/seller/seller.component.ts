@@ -7,6 +7,7 @@ import { HttpClient } from '@angular/common/http';
 import { Router } from '@angular/router';
 import { signUp } from '../data-type';
 
+
 @Component({
   selector: 'app-seller',
   standalone: true,
@@ -38,8 +39,7 @@ if(isError)
 }
 
   })
-   
-  
+    
  }
 
  loginCheck:boolean = false;

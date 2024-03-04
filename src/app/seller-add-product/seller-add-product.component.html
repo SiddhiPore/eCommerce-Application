@@ -1,0 +1,18 @@
+<mat-card>
+    <mat-card-content>
+      <h1>Add New Product</h1>
+      <div class="addproduct">
+      <form #addProduct="ngForm" (ngSubmit)="submit(addProduct.value)">
+      <input type="text" #task class="input-form" name="name" placeholder="Enter product name" ngModel autocomplete="off"> <br>
+      <input type="text" #task1 class="input-form" name="price" placeholder="Enter product price" ngModel autocomplete="off"> <br>
+      <input type="text" #task2 class="input-form" name="color" placeholder="Enter product color" ngModel autocomplete="off"> <br>
+      <input type="text" #task2 class="input-form" name="category" placeholder="Enter product category" ngModel autocomplete="off"> <br>
+      <input type="text" #task2 class="input-form" name="description" placeholder="Enter product Discription" ngModel autocomplete="off"> <br>
+      <!-- <textarea class="input-form" name="description" placeholder="Enter product description" ></textarea> <br> -->
+      <input type="text" #task2 class="input-form" name="image" placeholder="Enter product image URL" ngModel autocomplete="off"> <br>
+      <button mat-stroked-button color="warn"   style="border-color: rgb(167, 234, 234); ">Add Product</button>
+      </form>
+    </div>
+   
+</mat-card-content>
+</mat-card>

@@ -1,1 +1,42 @@
-<p>home works!</p>
+
+@if (popularProduct) {
+
+	<ngb-carousel>
+        @for(item of popularProduct; track item)
+        {
+		<ng-template ngbSlide>
+			<div class="product-head-img">
+				<img src="{{item.image}}" style="height: 500px; width: 400px; margin-left: 500px; " alt="Random first slide" />
+			</div>
+			<div class="carousel-caption">
+				<h3 style="color: black; font-weight: 900;"> {{item.name}}</h3>
+				<p style="color: black;">{{item.description}}</p>
+			</div>
+		</ng-template>
+       }
+	</ngb-carousel>
+}
+<br> <br>
+<div class="row">
+	@for(item of trndyProduct; track item){
+	<div class="col">
+<mat-card class="product-card" (click)="redirecttoDetails(item.id)">
+
+	<img src="{{item.image}}" style="width: 100px; height: 100px;" alt="">
+	<br>
+	<mat-divider></mat-divider>
+	<mat-card-header style="font-weight: bold; margin-left: 35px; text-align: center; font-size: large;">{{item.name}}</mat-card-header> <br> 
+	<div class="product-details">
+		
+		<h6><b>Price :</b> {{item.price}} </h6>
+		<h6><b>Color :</b>  {{item.color}}</h6>
+	</div>
+	<mat-divider></mat-divider> 
+	<div class="footer">
+       <a routerLink="/details/{{item.id}}">View details</a>
+	   <a href="addtoCart()" style="float: right;">Add to cart</a>
+	</div>
+  </mat-card>
+</div>
+	}
+</div>

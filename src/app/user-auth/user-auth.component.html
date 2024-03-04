@@ -1,0 +1,98 @@
+<!-- 
+  @if(!loginCheck){
+    <mat-card >
+        <mat-card-content>
+          <h1>Sign Up</h1>
+          <div class="seller">
+          <form #userSignUp="ngForm" (ngSubmit)="signUp(userSignUp.value)">
+          <input type="text" #task class="input-form" name="user" placeholder="Enter your username" ngModel autocomplete="off"> <br>
+          <input type="text" #task1 class="input-form" name="email" placeholder="Enter your Email" ngModel autocomplete="off"> <br>
+          <input type="password" #task2 class="input-form" name="password" placeholder="Enter your password" ngModel autocomplete="off">
+          <button mat-stroked-button color="warn" [disabled]="!task.value" [disabled]="!task1.value" [disabled]="!task2.value"  style="border-color: chocolate; ">Sign Up</button>
+          </form>
+        </div>
+        <p>Already have account ?</p><a (click)="openLogin()" >Login here</a>
+        </mat-card-content>
+      </mat-card>
+    }
+     -->
+
+
+
+    @if(!loginCheck){
+
+      <div class="login-form">
+        <div class="text">
+           SIGN-UP
+        </div>
+        <form #userSignUp="ngForm" (ngSubmit)="signUp(userSignUp.value)">
+           <div class="field">
+              <div class="fas fa-envelope"></div>
+              <input type="text" #task class="input-form" name="user" placeholder="Enter your username" ngModel
+                 autocomplete="off"> <br>
+           </div>
+           <div class="field">
+              <div class="fas fa-envelope"></div>
+              <input type="text" #task1 class="input-form" name="email" placeholder="Enter your Email" ngModel
+                 autocomplete="off"> <br>
+           </div>
+           <div class="field">
+              <div class="fas fa-envelope"></div>
+              <input type="password" #task2 class="input-form" name="password" placeholder="Enter your password" ngModel
+                 autocomplete="off">
+           </div>
+           <button mat-stroked-button color="warn">Sign Up</button>
+           <div class="link">
+              Already have account ?<a (click)="openLogin()">Login here</a>
+           </div>
+        </form>
+      </div>
+      }
+
+
+
+      <!-- Login Form -->
+      <!-- @if(loginCheck){
+      <mat-card>
+        <mat-card-content>
+          <h1>Login Form</h1>
+          <div class="seller">
+          <form #userLogin="ngForm" (ngSubmit)="login(userLogin.value)"> -->
+          <!-- <input type="text" class="input-form" name="user" placeholder="Enter your username" ngModel autocomplete="off"> <br> -->
+          <!-- <input type="text" class="input-form" name="email" placeholder="Enter your Email" ngModel autocomplete="off"> <br> 
+          <input type="password" class="input-form" name="password" placeholder="Enter your password" ngModel autocomplete="off">
+          <button mat-stroked-button color="warn" style="border-color: chocolate; ">Login</button>
+          </form>
+        </div>
+        <p >Don,t have account ?</p><a (click)="openSignup()" >Sign up</a>
+        </mat-card-content>
+      </mat-card>
+    } -->
+
+
+
+    @if(loginCheck){
+
+      <div class="login-form">
+        <div class="text">
+           LOGIN
+        </div>
+        <form #userLogin="ngForm" (ngSubmit)="login(userLogin.value)">
+           
+           <div class="field">
+              <div class="fas fa-envelope"></div>
+              <input type="text" #task1 class="input-form" name="email" placeholder="Enter your Email" ngModel
+                 autocomplete="off"> <br>
+           </div>
+           <div class="field">
+              <div class="fas fa-envelope"></div>
+              <input type="password" #task2 class="input-form" name="password" placeholder="Enter your password" ngModel
+                 autocomplete="off">
+           </div>
+           <button mat-stroked-button color="warn">Login</button>
+           <div class="link">
+            Don,t have account ?<a (click)="openSignup()">Sign up</a>
+           </div>
+        </form>
+      </div>
+      }

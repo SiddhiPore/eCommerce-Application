@@ -1,0 +1,28 @@
+
+
+
+table{
+    text-align: center;
+    color: blueviolet;
+    border-collapse: collapse;
+    margin-left: 350px;
+    margin-top: 40px;
+    font-size: medium;
+
+}
+table td, table th{
+    border: 1px solid black;
+    padding: 10px;
+    min-height: 160px;
+
+}
+img{
+    width: 100px;
+    height: 100px;
+}
+h1{
+    margin-left: 590px;
+    margin-top: 30px;
+    color: chocolate;
+    font-weight: bold;
+}

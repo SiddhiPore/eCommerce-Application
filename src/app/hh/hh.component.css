@@ -1,0 +1,6 @@
+.transparent-black {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 20px;
+  text-align: center;
+}

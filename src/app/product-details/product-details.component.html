@@ -1,0 +1,46 @@
+
+@if(productData){
+
+    <div class="container">
+        <img  src="{{productData.image}}" alt="">
+    
+    <div class="info">
+    <mat-card class="card">
+    <mat-card-content class="card-contain">
+    
+        <h1 style="text-align: center; color: rgb(222, 147, 8); font-weight: bolder; "> {{productData.name}}</h1>
+        <h3> <b> Price : </b>{{productData.price}}</h3>
+        <h3 [style.backgroundColor]="productData.color" class="product-color"><b></b> </h3>
+        <h3><b>Category :</b> {{productData.category}}</h3>
+        <h3><b>Description :</b>  {{productData.description}}</h3>
+    
+    
+        <button mat-raised-button color="primary">Buy Now</button>
+        @if(!removeCart){
+        <button mat-raised-button color="primary" (click)="addtoCart()" style="margin-left: 5px;">Add to cart</button>
+        }
+
+        @if(removeCart){
+        <button mat-raised-button color="primary" (click)="removetoCart(productData.id)" style="margin-left: 5px;">Remove to cart</button>
+        }
+    
+
+    <br><br>
+    
+     <button mat-raised-button  (click)="handleQuality('min')" style="width: 2px;" >-</button>
+     <input type="text" style="text-align: center;" value="{{productQuantity}}" style="width: 60px; height: 28px; border: blueviolet; text-align: center;">
+     <button mat-raised-button  (click)="handleQuality('plus')" style="width: 2px;" >+</button>
+   
+</mat-card-content>
+</mat-card>
+
+   
+  </div>
+
+</div>
+
+}
+
+
+
+
