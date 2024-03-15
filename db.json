@@ -216,6 +216,18 @@
       "user": "sss",
       "email": "sss",
       "password": "sss"
+    },
+    {
+      "id": "c097",
+      "user": "sssss",
+      "email": "ss",
+      "password": "ss"
+    },
+    {
+      "id": "6aba",
+      "user": "ddd",
+      "email": "ddd",
+      "password": "ddd"
     }
   ],
   "cart": [
@@ -420,14 +432,5 @@
       "productId": "dcef"
     }
   ],
-  "orders": [
-    {
-      "id": "299c",
-      "email": "",
-      "address": "",
-      "details": "",
-      "totalPrice": 1300,
-      "userId": "e592"
-    }
-  ]
+  "orders": []
 }
